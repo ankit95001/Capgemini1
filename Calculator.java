@@ -4,11 +4,15 @@ public class Calculator {
     public static int add(int num1,int num2){
 	return num1+num2;
     }
+    public static int subtraction(int num1,int num2){
+	return num1-num2;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Select an operation:");
         System.out.println("1. Addition");
+	System.out.println("2. Subtraction");
         
         int choice = scanner.nextInt();
         
@@ -20,6 +24,9 @@ public class Calculator {
         switch (choice) {
             case 1: // Addition
                 System.out.println("Result: " + add(num1,num2));
+                break;
+	    case 2: // Subtraction
+                System.out.println("Result: " + subtraction(num1,num2));
                 break;
             default:
                 System.out.println("Invalid choice! Please select a valid operation.");
