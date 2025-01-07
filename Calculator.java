@@ -13,7 +13,7 @@ public class Calculator {
     public static int division(int num1,int num2){
 	return num1/num2;
     }
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -32,6 +32,7 @@ public class Calculator {
         System.out.print("Enter the second number: ");
         int num2 = scanner.nextInt();
         
+
         switch (choice) {
             case 1: // Addition
                 System.out.println("Result: " + add(num1,num2));
@@ -52,6 +53,7 @@ public class Calculator {
                 System.out.println("Invalid choice! Please select a valid operation.");
         }
         
+
         scanner.close();
     }
 }
